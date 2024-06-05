@@ -64,3 +64,28 @@ a:visited {
     display: flex;
     justify-content: space-evenly;
 }
+
+h1 {
+    color: #004680;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-container {
+    padding: 10;
+    border: 1px solid slategrey;
+    display: flex;
+    justify-content: center;
+    background-color: steelblue;
+    color: black;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: auto;
+}
