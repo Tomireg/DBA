@@ -13,6 +13,9 @@ function init() {
 
     let myButton = document.getElementById("mybtn");
     myButton.addEventListener("click", clickedDarkMode);
+
+    let checkBox = document.getElementById("checkbox");
+    checkBox.addEventListener("click", showPasswordBox);
 }
 
 function clickedDarkMode() {
@@ -48,8 +51,17 @@ function styleBtn() {
 function styleNav() {
     let allButtons = document.getElementsByClassName("nav-item");
     for (let i = 0; i < allButtons.length; i++) {
-      let button = allButtons[i];
-  
-      button.classList.toggle("nav-item-dark");
+        let button = allButtons[i];
+
+        button.classList.toggle("nav-item-dark");
     }
-  }
+}
+
+function showPasswordBox(e) {
+    let passwordBox = document.getElementById("password");
+    if (e.target.checked) {
+        passwordBox.type = "text";
+    } else {
+        passwordBox.type = "password";
+    }
+}

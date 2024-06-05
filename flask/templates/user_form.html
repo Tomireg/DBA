@@ -2,17 +2,18 @@
 
 {% block titlecontent %}
 <title>User Form</title>
-    {% endblock %}
+{% endblock %}
 
 {% block content %}
-    <form action="{{ url_for('user_insert') }}" method="POST">
-        <label for="username">username</label>
-        <input type="text" id="username" name="username">
-        <label for="email">email</label>
-        <input type="email" id="email" name="email">
-        <label for="password">password</label>
-        <input type="password" id="password" name="password">
-        
-        <button type="submit">Submit</button>
-    </form>
+<form action="{{ url_for('user_insert') }}" method="POST">
+    <label for="username">username</label>
+    <input type="text" id="username" name="username">
+    <label for="email">email</label>
+    <input type="email" id="email" name="email">
+    <label for="password">password</label>
+    <input type="password" id="password" name="password">
+    <label for="checkbox">Show</label>
+    <input type="checkbox" id="checkbox" name="password">
+    <button type="submit">Submit</button>
+</form>
 {% endblock %}
