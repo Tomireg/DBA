@@ -32,6 +32,7 @@ function toggleDarkMode() {
 function setDarkMode() {
     styleBody();
     styleBtn();
+    styleNav();
 }
 
 function styleBody() {
@@ -43,3 +44,12 @@ function styleBtn() {
     let dmBtn = document.getElementById("mybtn");
     dmBtn.classList.toggle("dmbtn");
 }
+
+function styleNav() {
+    let allButtons = document.getElementsByClassName("nav-item");
+    for (let i = 0; i < allButtons.length; i++) {
+      let button = allButtons[i];
+  
+      button.classList.toggle("nav-item-dark");
+    }
+  }
