@@ -9,7 +9,7 @@
 }
 
 .mybtn {
-    border: 1px solid black;
+    border: none;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: white;
@@ -17,7 +17,7 @@
 }
 
 .dmbtn {
-    border: 1px solid white;
+    border: none;
     font-size: 2rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: black;
