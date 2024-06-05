@@ -126,3 +126,9 @@ label {
     display: inline-block;
     color: red;
 }
+
+.logo {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
