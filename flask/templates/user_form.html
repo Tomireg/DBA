@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block titlecontent %}
+<title>User Form</title>
+    {% endblock %}
+
 {% block content %}
     <form action="{{ url_for('user_insert') }}" method="POST">
         <label for="username">username</label>
