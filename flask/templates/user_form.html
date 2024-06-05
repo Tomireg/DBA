@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="form" id="form">
     <form action="{{ url_for('user_insert') }}" method="POST">
         <label for="username">username</label>
         <input type="text" id="username" name="username">
@@ -8,7 +9,15 @@
         <input type="text" id="email" name="email">
         <label for="password">password</label>
         <input type="text" id="password" name="password">
-
+        <label for="checkbox">Show</label>
+        <input type="checkbox" id="checkbox" name="password"><br><br>
+        <label for="">Strength of password (Minimum 6 characters. Must contain minimum 1 uppercase, 1
+            lowercase characters and 1 numeric digit.)</label>
+        <div class="power-container">
+            <div id="power-point"></div>
+        </div>
         <button type="submit">Submit</button>
     </form>
+    <div id="result"></div>
+</div>
 {% endblock %}
