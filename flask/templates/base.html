@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% block titlecontent %}
     {% endblock %}
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     {% block links %}
     {% endblock %}
@@ -16,14 +16,14 @@
     <header>
         <nav>
             <ul class="nav-container">
-                <li class="nav-item"><a href="https://dba-jxuy.onrender.com/">User Manager</a></li>
-                <li class="nav-item"><a href="https://dba-jxuy.onrender.com/about">About</a></li>
-                <li class="nav-item"><a href="https://dba-jxuy.onrender.com/contact">Contact</a></li>
+                <li class="nav-item"><a href="/">User Manager</a></li>
+                <li class="nav-item"><a href="/about">About</a></li>
+                <li class="nav-item"><a href="/contact">Contact</a></li>
                 <li class="nav-item"><button class="mybtn" id="mybtn">Dark Mode</button></li>
             </ul>
         </nav>
         <div class="logo">
-            <img src="{{url_for('static', filename='logo.png')}}" />
+            <img src="{{url_for('static', filename='images/logo.png')}}" />
         </div>
     </header>
     {% block content %}
